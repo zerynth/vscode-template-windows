@@ -1,0 +1,321 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "project",
+                "compile",
+                "."
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Show Supported Devices",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "device",
+                "supported",
+                "--nice"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Set Target Device Type",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "project",
+                "prepare",
+                ".",
+		"--target",
+		"${input:target}"
+            ],
+            "presentation": {
+                "reveal": "silent",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Set Target Device Port",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "project",
+                "prepare",
+                ".",
+		"--port",
+		"${input:port}"
+            ],
+            "presentation": {
+                "reveal": "silent",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Set Target Device Probe",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "project",
+                "prepare",
+                ".",
+		"--probe",
+		"${input:probe}"
+            ],
+            "presentation": {
+                "reveal": "silent",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },{
+            "label": "Clean",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "project",
+                "clean",
+                "."
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Install Deps",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "project",
+                "deps",
+                "."
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Uplink",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "project",
+                "uplink",
+                "."
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Register Device",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "project",
+                "register",
+                "."
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Virtualize Device",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "project",
+                "virtualize",
+                "."
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Show Available Ports",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "project",
+                "ports",
+                "."
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Show Available Virtual Machines",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "project",
+                "vms",
+                "."
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Open Device Console",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "project",
+                "console",
+                "."
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+	{
+            "label": "Prepare FOTA",
+            "type": "shell",
+            "command": "zdm",
+            "args": [
+                "fota",
+                "prepare",
+                "."
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+	{
+            "label": "Login",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "login"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "inputs": [
+    {
+      "type": "promptString",
+      "id": "target",
+      "description": "What type of device target you want to program for?",
+      "default": "esp32_devkitc"
+    },
+    {
+        "type": "promptString",
+        "id": "port",
+        "description": "What is the serial port to use?",
+        "default": "/dev/ttyACM0"
+      },
+    {
+      "type": "pickString",
+      "id": "probe",
+      "description": "What type of component jtag probe you use?",
+      "options": [
+        "stlink",
+        "atmel_ice",
+        "atmel_edbg",
+        "jlink",
+        "cmsis_dap"
+      ],
+      "default": "stlink"
+    }
+  ]
+  }
+

@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "${env:USERPROFILE}/zerynth2/sys/python/python.exe",
+    "python.autoComplete.extraPaths": [
+        "${env:USERPROFILE}/zerynth2/dist/r2.5.1/stdlib",
+        "${env:USERPROFILE}/zerynth2/dist/r2.5.1/libs/official"
+    ]
+}
+

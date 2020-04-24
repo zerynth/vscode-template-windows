@@ -1,0 +1,8 @@
+---
+config: {}
+specs:
+    disk: null
+    port: your_device_port_here
+    probe: null
+target: your_device_target_here
+...
