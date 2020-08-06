@@ -1,34 +1,37 @@
 # Minimal Zerynth Makefile
 
 compile :
-	ztc project compile .
+	ztc --user_agent VSCodeMK project compile .
 
 uplink :
-	ztc project uplink .
+	ztc --user_agent VSCodeMK project uplink .
 
 deps :
-	ztc project deps .
+	ztc --user_agent VSCodeMK project deps .
 
 clean :
-	ztc project clean .
+	ztc --user_agent VSCodeMK project clean .
 
 register :
-	ztc project register .
+	ztc --user_agent VSCodeMK project register .
 
 virtualize :
-	ztc project virtualize .
+	ztc --user_agent VSCodeMK project virtualize .
 
 ports :
-	ztc project ports .
+	ztc --user_agent VSCodeMK project ports .
 
 targets :
-	ztc project targets .
+	ztc --user_agent VSCodeMK project targets .
 
 vms :
-	ztc project vms .
+	ztc --user_agent VSCodeMK project vms .
 
 prepare :
-	ztc project prepare .
+	ztc --user_agent VSCodeMK project prepare .
 
 console : 
-	ztc project console .
+	ztc --user_agent VSCodeMK project console .
+
+install : 
+	ztc --user_agent VSCodeMK project install .

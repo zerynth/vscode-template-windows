@@ -6,9 +6,32 @@
             "type": "shell",
             "command": "ztc",
             "args": [
+                "--user_agent",
+                "VSCode",
                 "project",
                 "compile",
                 "."
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Clean Tmp and DB",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "--user_agent",
+                "VSCode",
+                "clean",
+                "--tmp",
+                "--db"
             ],
             "presentation": {
                 "reveal": "always",
@@ -25,6 +48,8 @@
             "type": "shell",
             "command": "ztc",
             "args": [
+                "--user_agent",
+                "VSCode",
                 "device",
                 "supported",
                 "--nice"
@@ -44,6 +69,8 @@
             "type": "shell",
             "command": "ztc",
             "args": [
+                "--user_agent",
+                "VSCode",
                 "project",
                 "prepare",
                 ".",
@@ -65,6 +92,8 @@
             "type": "shell",
             "command": "ztc",
             "args": [
+                "--user_agent",
+                "VSCode",
                 "project",
                 "prepare",
                 ".",
@@ -86,6 +115,8 @@
             "type": "shell",
             "command": "ztc",
             "args": [
+                "--user_agent",
+                "VSCode",
                 "project",
                 "prepare",
                 ".",
@@ -102,10 +133,12 @@
                 "isDefault": true
             }
         },{
-            "label": "Clean",
+            "label": "Clean Project",
             "type": "shell",
             "command": "ztc",
             "args": [
+                "--user_agent",
+                "VSCode",
                 "project",
                 "clean",
                 "."
@@ -125,6 +158,8 @@
             "type": "shell",
             "command": "ztc",
             "args": [
+                "--user_agent",
+                "VSCode",
                 "project",
                 "deps",
                 "."
@@ -144,6 +179,8 @@
             "type": "shell",
             "command": "ztc",
             "args": [
+                "--user_agent",
+                "VSCode",
                 "project",
                 "uplink",
                 "."
@@ -163,6 +200,8 @@
             "type": "shell",
             "command": "ztc",
             "args": [
+                "--user_agent",
+                "VSCode",
                 "project",
                 "register",
                 "."
@@ -182,6 +221,8 @@
             "type": "shell",
             "command": "ztc",
             "args": [
+                "--user_agent",
+                "VSCode",
                 "project",
                 "virtualize",
                 "."
@@ -201,6 +242,8 @@
             "type": "shell",
             "command": "ztc",
             "args": [
+                "--user_agent",
+                "VSCode",
                 "project",
                 "ports",
                 "."
@@ -220,6 +263,8 @@
             "type": "shell",
             "command": "ztc",
             "args": [
+                "--user_agent",
+                "VSCode",
                 "project",
                 "vms",
                 "."
@@ -239,6 +284,8 @@
             "type": "shell",
             "command": "ztc",
             "args": [
+                "--user_agent",
+                "VSCode",
                 "project",
                 "console",
                 "."
@@ -258,9 +305,35 @@
             "type": "shell",
             "command": "zdm",
             "args": [
+                "--user_agent",
+                "VSCode",
                 "fota",
                 "prepare",
                 "."
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Install Zerynth OS",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "--user_agent",
+                "VSCode",
+                "project",
+                "install",
+                ".",
+                "--force",
+                "--target",
+                "${input:target}"
             ],
             "presentation": {
                 "reveal": "always",
